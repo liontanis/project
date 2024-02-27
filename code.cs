@@ -26,3 +26,15 @@
         private bool _disposed;
         private int _drawOrder;
         private bool _visible = true;
+  public int DrawOrder
+        {
+            get { return _drawOrder; }
+            set
+            {
+                if (_drawOrder != value)
+                {
+                    _drawOrder = value;
+                    OnDrawOrderChanged(this, EventArgs.Empty);
+                }
+            }
+        }
