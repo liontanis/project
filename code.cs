@@ -18,6 +18,7 @@
                 }
             }
         }
+//hello
 
   public class DrawableGameComponent : GameComponent, IDrawable
     {
